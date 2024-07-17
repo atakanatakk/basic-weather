@@ -12,7 +12,7 @@ This Weather App is a simple web application that fetches weather data from the 
 
 ## Live Demo
 
-Check out the live demo of the app on [GitHub Pages](https://atakanatakk.github.io/weather-app/).
+Check out the live demo of the app on [GitHub Pages](https://atakanatakk.github.io/basic-weather/).
 
 ## Screenshot
 
@@ -24,12 +24,12 @@ Check out the live demo of the app on [GitHub Pages](https://atakanatakk.github.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/atakanatakk/weather-app.git
+    git clone https://github.com/atakanatakk/basic-weather.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd weather-app
+    cd basic-weather
     ```
 
 3. Open `index.html` in your favorite web browser.
