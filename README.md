@@ -16,9 +16,9 @@ Check out the live demo of the app on [GitHub Pages](https://atakanatakk.github.
 
 ## Screenshot
 
-![Weather App Screenshot](1.png)
-![Weather App Screenshot](2.png)
-![Weather App Screenshot](3.png)
+![Weather App Screenshot](img/1.png)
+![Weather App Screenshot](img/2.png)
+![Weather App Screenshot](img/3.png)
 
 ## Installation
 
