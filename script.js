@@ -58,27 +58,34 @@ const changeBackgroundVideo = (weatherDescription) => {
 
 	switch (weatherDescription.toLowerCase()) {
 		case 'clear':
-			videoSrc = 'https://cdn.pixabay.com/video/2017/02/28/8015-206146113_large.mp4'; // Add the appropriate video URL
+			videoSrc = 'https://cdn.pixabay.com/video/2017/02/28/8015-206146113_large.mp4'; 
 			break;
 		case 'clouds':
-			videoSrc = 'https://cdn.pixabay.com/video/2023/08/07/174996-852559033_large.mp4'; // Add the appropriate video URL
+			videoSrc = 'https://cdn.pixabay.com/video/2023/08/07/174996-852559033_large.mp4';
 			break;
 		case 'rain':
-			videoSrc = 'https://cdn.pixabay.com/video/2019/10/24/28236-368501609_large.mp4'; // Add the appropriate video URL
+			videoSrc = 'https://cdn.pixabay.com/video/2019/10/24/28236-368501609_large.mp4';
 			break;
 		case 'snow':
-			videoSrc = 'https://cdn.pixabay.com/video/2022/12/20/143672-784129650_large.mp4'; // Add the appropriate video URL
+			videoSrc = 'https://cdn.pixabay.com/video/2022/12/20/143672-784129650_large.mp4';
 			break;
 		case 'thunderstorm':
-			videoSrc = 'https://pixabay.com/videos/rain-lightning-storm-thunder-night-204835/'; // Add the appropriate video URL
+			videoSrc = 'https://pixabay.com/videos/rain-lightning-storm-thunder-night-204835/';
 			break;
 		default:
-			videoSrc = 'https://cdn.pixabay.com/video/2024/05/26/213763_large.mp4'; // Add a default video URL
+			videoSrc = 'https://cdn.pixabay.com/video/2024/05/26/213763_large.mp4';
 	}
 
-	backgroundVideo.querySelector('source').src = videoSrc;
-	backgroundVideo.load();
-};
+	const videoElement = document.getElementById('backgroundVideo');
+	videoElement.querySelector('source').src = videoSrc;
+	videoElement.load();
+	videoElement.play().catch(error => {
+	    console.error('Error attempting to play the video:', error);
+	});
+	videoElement.muted = true; // Ensure the video is muted
+	videoElement.setAttribute('playsinline', ''); // Ensure inline play
+	videoElement.setAttribute('webkit-playsinline', ''); // Ensure inline play for Safari
+    };
 
 // Function to get emoji based on weather description
 const getWeatherEmoji = (weatherDescription) => {
@@ -98,6 +105,7 @@ const getWeatherEmoji = (weatherDescription) => {
 	}
 };
 
+// Function to Generate Random City
 const generateRandomCity = () => {
 	const cities = [
 		'New York', 'London', 'Tokyo', 'Paris', 'Berlin', 'Moscow', 'Sydney', 'Rome', 'Rio de Janeiro',
