@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--CSS Link-->
+	<link rel="stylesheet" href="./styles.css">
+
+	<!--Fontawesome Link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+		integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+		crossorigin="anonymous" />
+	<!-- Google fonts link-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+	<title>Weather App</title>
+</head>
+
+<body>
+	<!-- Video link-->
+	<video autoplay muted loop id="backgroundVideo" preload="auto">
+		<source src="https://cdn.pixabay.com/video/2024/05/26/213763_large.mp4" type="video/mp4">
+	</video>
+
+	<!-- Container-->
+	<div class="container">
+		<div class="input">
+			<input type="text" class="inputValue" placeholder="Enter City Name">
+			<button class="button" title="Search"><i class="fas fa-search"></i></button>
+			<button class="button random-city-btn" title="Random"><i class='fas fa-dice'></i></button>
+		</div>
+
+		<div class="displayWeather">
+			<h1 class="temp">----°C</h1>
+			<p class="desc">----</p>
+		</div>
+
+	</div>
+
+	<!-- Link to Javascript -->
+	<script src="./script.js"></script>
+
+	<footer>
+		<div class="container2">
+			<p>&copy; 2024 Atakan Atak. All rights reserved.</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
