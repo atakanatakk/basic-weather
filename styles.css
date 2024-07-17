@@ -65,11 +65,10 @@ button.button:hover {
 	width: auto;
 	height: auto;
 	object-fit: cover;
+	z-index: -1;
 	transform: translate(-50%, -50%);
 	background-size: cover;
 	transition: 1s opacity;
-	z-index: -1;
-	pointer-events: none;
 }
 
 .displayWeather {
